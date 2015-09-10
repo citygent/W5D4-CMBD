@@ -1,0 +1,11 @@
+<%= form_for @movie, url: {action: "create"} do |f| %>
+  <p>Title</p>
+  <%= f.text_field :Title %>
+  <p>Director</p>
+  <%= f.text_field :Director %>
+  <p>Poster URL</p>
+  <%= f.text_field :Poster %>
+  <p>Plot</p>
+  <%= f.text_area :Plot, size: "60x12" %>
+  <%= f.submit "Create Movie" %>
+<% end %>
